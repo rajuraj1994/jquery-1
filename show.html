@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show</title>
+
+    <style>
+        .container{
+            height:400px;
+            background-color: dodgerblue;
+            width:500px;
+            display:none;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn">click to show</button>
+    <div class="container"></div>
+
+    <script src="jquery.js"></script>
+
+    <script>
+       // $ to acess jquery
+        $(function(){
+            $('#btn').click(function(){
+
+                // $('.container').show(5000)
+                //show is function which is defined in jquery.js
+
+                $('.container').toggle(4000)
+            })
+
+
+        })
+
+        //fadeIn  display:none
+        //fadeOut
+        //fadeToggle
+
+        //slideDown  display:none
+        //slideUp
+        //slideToggle
+
+
+    </script>
+    
+</body>
+</html>

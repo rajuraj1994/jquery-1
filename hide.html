@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hide</title>
+
+    <style>
+        .container{
+            height:400px;
+            background-color: dodgerblue;
+            width:500px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn">click to hide</button>
+    <div class="container"></div>
+
+    <script src="jquery.js"></script>
+
+    <script>
+       // $ to acess jquery
+        $(function(){
+            $('#btn').click(function(){
+
+                $('.container').hide(5000)
+                //hide is function which is defined in jquery.js
+            })
+
+
+        })
+
+
+    </script>
+    
+</body>
+</html>
